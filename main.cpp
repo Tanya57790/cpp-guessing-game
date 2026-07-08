@@ -1,6 +1,7 @@
 #include <iostream>
 #include <random>
 #include "random_number.h"
+#include "range_validate.h"
 #include "read_valid_int.h"
 
 using std::cin;
@@ -21,7 +22,7 @@ int main()
     cout << "end number: ";
     end = read_valid_int(end);
 
-    int random_num{random_number(start, end)};
+    int random_num = range_validate(start, end);
 
     int guessing_number{};
 
