@@ -1,0 +1,1 @@
+int read_game_difficulty(int);
